@@ -85,8 +85,6 @@ pip install -r requirements.txt
 3️⃣ Environment Variables
 Create a .env file using .env.example:
 
-env
-Copy code
 MONGO_URI=mongodb://localhost:27017
 DATABASE_NAME=recipe_db
 4️⃣ Run Backend Server
@@ -95,11 +93,21 @@ uvicorn app.main:app --reload
 Backend runs at:
 
 http://localhost:8000
-📡 API Endpoints (Sample)
-Method	Endpoint	Description
-GET	/recipes	Fetch all recipes
-POST	/recipes/search	Search recipes with filters
-GET	/recipes/{id}	Get recipe by ID
+```
+📡 API Endpoints
+🍽️ Recipes
+| Method | Endpoint            | Description                          |
+| ------ | ------------------- | ------------------------------------ |
+| GET    | `/getrecipes`       | Fetch all recipes                    |
+| GET    | `/getrecipeDetails` | Get detailed information of a recipe |
+
+
+
+🔐 Authentication
+| Method | Endpoint  | Description       |
+| ------ | --------- | ----------------- |
+| POST   | `/login`  | User login        |
+| POST   | `/signup` | User registration |
 
 Swagger UI:
 
@@ -132,8 +140,7 @@ Clean separation of concerns
 Scalable architecture
 
 🧪 Testing (Optional)
-bash
-Copy code
+
 pytest
 📌 Future Enhancements
 User authentication (JWT)
