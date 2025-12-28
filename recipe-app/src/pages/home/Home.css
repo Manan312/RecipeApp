@@ -1,0 +1,45 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.home-container {
+  scroll-snap-type: y mandatory;
+  background: linear-gradient(135deg, #fff8f0, #ffe8d6);
+}
+.full-section {
+  min-height: 0; /* full screen section */
+  scroll-snap-align: start;
+  width: 100%; /* full width */
+  background: transparent; /* let parent handle background */
+  padding: 100px 20px; /* breathing space */
+
+  /* transition setup */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.full-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-inner {
+  max-width: 1100px;          /* consistent readable width */
+  margin: auto;
+  padding: 60px 40px;
+
+  background: #ffffff;
+  border-radius: 24px;        /* smooth, modern curve */
+
+  box-shadow: 
+    0 12px 30px rgba(0, 0, 0, 0.06);
+
+  position: relative;
+}

@@ -1,0 +1,96 @@
+.slider-section {
+  text-align: center;
+}
+
+.slider-section h2 {
+  font-size: 2.3rem;
+  color: #7b4f2e;
+  margin-bottom: 40px;
+}
+
+/* Wrapper adapts to screen */
+.slider-wrapper {
+  width: 100%;
+  max-width: 900px;   /* desktop */
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Track */
+.slider-track {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+}
+
+/* Slide card */
+.slide {
+  min-width: 100%;
+  background: #fff3e0;
+  padding: 45px 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.slide h3 {
+  color: #d35400;
+  font-size: 1.7rem;
+  margin-bottom: 16px;
+}
+
+.slide p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5a4634;
+}
+
+/* Dots */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #d8cfc4;
+  border-radius: 50%;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background: #e67e22;
+  transform: scale(1.25);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .slider-wrapper {
+    max-width: 700px;
+  }
+
+  .slide {
+    padding: 35px 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .slider-wrapper {
+    max-width: 100%;
+  }
+
+  .slide {
+    padding: 30px 20px;
+  }
+
+  .slide h3 {
+    font-size: 1.4rem;
+  }
+
+  .slide p {
+    font-size: 1rem;
+  }
+}

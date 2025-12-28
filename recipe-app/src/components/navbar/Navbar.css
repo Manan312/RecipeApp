@@ -1,0 +1,79 @@
+/* Navbar glass effect */
+.navbar {
+  background: #fff3e0 !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 12px 20px;
+}
+
+/* Brand styling */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d35400 !important;
+  letter-spacing: 0.5px;
+}
+
+.navbar-brand:hover {
+  color: #d35400 !important;
+}
+
+/* Nav links */
+.nav-link {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #d35400 !important;  /* Dark slate */
+  padding: 8px 14px !important;
+  border-radius: 6px;
+  transition: 0.25s ease;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  background: #fff3e0;
+  color: #d35400 !important;
+  transform: translateY(-2px);
+}
+
+/* Active link */
+.nav-link.active {
+  background: #fff3e0 !important;
+  color: #d35400 !important;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+}
+
+/* Search input */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  padding: 8px 12px;
+  transition: 0.25s;
+}
+
+.form-control:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+/* Search button */
+.btn-outline-success {
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 8px 15px;
+  border-color: #10b981;
+  color: #10b981;
+  transition: 0.25s;
+}
+
+.btn-outline-success:hover {
+  background: #10b981;
+  color: white;
+  transform: translateY(-2px);
+}
+.btn-outline-success:focus {
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+}

@@ -1,0 +1,130 @@
+/* ===== Recipe Details Wrapper ===== */
+.recipeDetails {
+  max-width: 880px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px 32px;
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.08);
+  animation: recipeFadeIn 0.4s ease-in;
+}
+
+/* ===== Back Button ===== */
+.recipeDetails .back-button {
+  background: transparent;
+  border: none;
+  color: #e65100;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.recipeDetails .back-button:hover {
+  text-decoration: underline;
+}
+
+/* ===== Recipe Title ===== */
+.recipeDetails h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #e65100;
+  margin-bottom: 6px;
+}
+
+/* ===== Recipe Meta ===== */
+.recipeDetails .recipe-meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 22px;
+}
+
+.recipeDetails .recipe-description {
+  font-size: 18px;
+  color: #e65100;
+  margin-bottom: 22px;
+}
+
+
+/* ===== Sections ===== */
+.recipeDetails .recipe-section {
+  margin-top: 28px;
+}
+
+/* ===== Section Heading ===== */
+.recipeDetails .recipe-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.recipeDetails .recipe-section h3::after {
+  content: "";
+  width: 38px;
+  height: 3px;
+  background: #ff8f00;
+  display: block;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+/* ===== Ingredients ===== */
+.recipeDetails ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recipeDetails ul li {
+  background: #fff3e0;
+  padding: 11px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #444;
+  display: flex;
+  align-items: center;
+}
+
+.recipeDetails ul li::before {
+  content: "✔";
+  color: #e65100;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* ===== Steps ===== */
+.recipeDetails ol {
+  padding-left: 20px;
+}
+
+.recipeDetails ol li {
+  margin-bottom: 14px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #444;
+}
+
+/* ===== Animation ===== */
+@keyframes recipeFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 600px) {
+  .recipeDetails {
+    padding: 22px 18px;
+  }
+
+  .recipeDetails h2 {
+    font-size: 26px;
+  }
+}

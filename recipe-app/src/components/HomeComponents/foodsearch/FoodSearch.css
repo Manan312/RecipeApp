@@ -1,0 +1,69 @@
+.food-search-container {
+  background: #ffffff;
+  padding: 50px 40px;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.food-search-container h2 {
+  color: #7b4f2e;
+  margin-bottom: 30px;
+}
+
+.search-controls {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 15px;
+  align-items: center;
+}
+
+.search-controls input,
+.search-controls select {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #e0d3c2;
+  font-size: 0.95rem;
+}
+
+.search-controls input:focus,
+.search-controls select:focus {
+  outline: none;
+  border-color: #e67e22;
+  box-shadow: 0 0 0 2px rgba(230, 126, 34, 0.15);
+}
+
+.search-controls button {
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  background: #e67e22;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-controls button:hover {
+  background: #d35400;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-controls {
+    grid-template-columns: 1fr;
+  }
+}
+.food-grid {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.no-results {
+  margin-top: 20px;
+  color: #7b4f2e;
+}
