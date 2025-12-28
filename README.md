@@ -26,27 +26,64 @@ A full-stack Recipe Application where users can search, filter, and explore reci
 recipe-app/
 │
 ├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── services/
-│ │ ├── styles/
-│ │ ├── App.jsx
-│ │ └── main.jsx
-│ └── package.json
+│   ├── public/
+│   │   └── index.html
+│   │
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── common/
+│   │   │   └── layout/
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Home/
+│   │   │   ├── Recipes/
+│   │   │   ├── RecipeDetails/
+│   │   │   └── Auth/
+│   │   │
+│   │   ├── services/
+│   │   │   └── api.js
+│   │   │
+│   │   ├── styles/
+│   │   │   ├── global.css
+│   │   │   └── variables.css
+│   │   │
+│   │   ├── utils/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   └── package.json
 │
 ├── backend/
-│ ├── app/
-│ │ ├── routers/
-│ │ ├── models/
-│ │ ├── schemas/
-│ │ ├── services/
-│ │ ├── database.py
-│ │ └── main.py
-│ ├── requirements.txt
-│ └── .env.example
+│   ├── app/
+│   │   ├── routers/
+│   │   │   ├── recipes.py
+│   │   │   └── auth.py
+│   │   │
+│   │   ├── models/
+│   │   │   ├── recipe_model.py
+│   │   │   └── user_model.py
+│   │   │
+│   │   ├── schemas/
+│   │   │   ├── recipe_schema.py
+│   │   │   └── user_schema.py
+│   │   │
+│   │   ├── services/
+│   │   │   ├── recipe_service.py
+│   │   │   └── auth_service.py
+│   │   │
+│   │   ├── core/
+│   │   │   ├── config.py
+│   │   │   └── security.py
+│   │   │
+│   │   ├── database.py
+│   │   └── main.py
+│   │
+│   ├── requirements.txt
+│   └── .env.example
 │
+├── .gitignore
 └── README.md
+
 
 
 ---
