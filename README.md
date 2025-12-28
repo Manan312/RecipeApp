@@ -23,70 +23,74 @@ A full-stack Recipe Application where users can search, filter, and explore reci
 
 ## 📁 Project Structure
 
-recipe-app/
+```text
+RecipeApp/
 │
-├── frontend/
+├── recipe-app/                     # React Frontend
 │   ├── public/
 │   │   └── index.html
 │   │
 │   ├── src/
+│   │   ├── api/
+│   │   │   └── middleware.js
+│   │   │
+│   │   ├── assets/
+│   │   │   └── react.svg
+│   │   │
 │   │   ├── components/
-│   │   │   ├── common/
-│   │   │   └── layout/
+│   │   │   ├── HomeComponents/
+│   │   │   ├── card/
+│   │   │   ├── footer/
+│   │   │   ├── header/
+│   │   │   └── navbar/
 │   │   │
 │   │   ├── pages/
-│   │   │   ├── Home/
-│   │   │   ├── Recipes/
-│   │   │   ├── RecipeDetails/
-│   │   │   └── Auth/
+│   │   │   ├── about/
+│   │   │   ├── contact/
+│   │   │   ├── home/
+│   │   │   ├── login/
+│   │   │   ├── signup/
+│   │   │   ├── recipes/
+│   │   │   ├── recipe-details/
+│   │   │   └── notfound/
 │   │   │
-│   │   ├── services/
-│   │   │   └── api.js
+│   │   ├── router/
+│   │   │   ├── AppRouter.jsx
+│   │   │   └── PrivateRouter.jsx
 │   │   │
-│   │   ├── styles/
-│   │   │   ├── global.css
-│   │   │   └── variables.css
-│   │   │
-│   │   ├── utils/
+│   │   ├── layout/
 │   │   ├── App.jsx
 │   │   └── main.jsx
 │   │
-│   └── package.json
+│   ├── index.html
+│   ├── package.json
+│   └── .gitignore
 │
-├── backend/
-│   ├── app/
-│   │   ├── routers/
-│   │   │   ├── recipes.py
-│   │   │   └── auth.py
-│   │   │
-│   │   ├── models/
-│   │   │   ├── recipe_model.py
-│   │   │   └── user_model.py
-│   │   │
-│   │   ├── schemas/
-│   │   │   ├── recipe_schema.py
-│   │   │   └── user_schema.py
-│   │   │
-│   │   ├── services/
-│   │   │   ├── recipe_service.py
-│   │   │   └── auth_service.py
+├── recipe-app-api/                # FastAPI Backend
+│   ├── api/
+│   │   ├── controller/
+│   │   │   ├── auth_controller.py
+│   │   │   └── recipe_controller.py
 │   │   │
 │   │   ├── core/
 │   │   │   ├── config.py
 │   │   │   └── security.py
 │   │   │
-│   │   ├── database.py
+│   │   ├── db/
+│   │   │   ├── database.py
+│   │   │   └── repos/
+│   │   │
+│   │   ├── models/
+│   │   │   ├── LoginModel.py
+│   │   │   └── RecipeModel.py
+│   │   │
 │   │   └── main.py
 │   │
-│   ├── requirements.txt
-│   └── .env.example
+│   └── .gitignore
 │
-├── .gitignore
 └── README.md
 
-
-
----
+```
 
 ## ✨ Features
 
@@ -202,7 +206,10 @@ Open a Pull Request
 📄 License
 This project is licensed under the MIT License.
 
-👤 Author
-Manan Garg
-Software Engineer
-Tech Stack: React | FastAPI | MongoDB | .NET | SQL Server
+## 👤 Author
+
+- **Manan Garg**
+- Software Engineer
+- Tech Stack: React | FastAPI | MongoDB | .NET | SQL Server
+
+
